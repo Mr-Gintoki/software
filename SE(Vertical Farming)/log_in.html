@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+    background-color: #84D3DC;
+}
+
+.card {
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #84D3DC ;
+}
+
+.card-header {
+    background-color: #84D3DC;
+    border-bottom: none;
+}
+
+.btn-outline-secondary {
+    
+    border-color:  #EF6B48;
+    background-color: #EF6B48 ;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+.btn-primary:hover {
+    background-color: #ff4c4c;
+    border-color: #ff4c4c;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h5 class="mb-0">Logo</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Create New Account</h5>
+                                <p>Already Registered? Login</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper mauris in magna venenatis suscipit.</p>
+                                <button class="btn btn-outline-secondary">Learn More</button>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Login</h5>
+                                <form id="loginForm">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" placeholder="NAME" value="Francois Mercer">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" placeholder="EMAIL" value="hello@reallygreatsite.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="password" placeholder="PASSWORD" value="********">
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" id="dateOfBirth">
+                                            <option value="">DATE OF BIRTH</option>
+                                            <!-- Add options for date of birth -->
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

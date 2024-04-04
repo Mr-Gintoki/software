@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C8E6FA; /* Main content area background color */
+}
+
+header {
+    background-color: #2C4F2C; /* Header background color */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a, #user-name {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+#logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#crop-type {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.crop-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.crop-card {
+    background-color: white; /* Crop type card background color */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 150px; /* Fixed width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow */
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.crop-card:hover {
+    transform: translateY(-5px);
+}
+
+.crop-card img {
+    width: 100%; /* Images take full width of the card */
+    height: auto;
+}
+
+.crop-card span {
+    display: block;
+    color: #800080; /* Crop type names color */
+    margin-top: 10px;
+}
+
+/* Media query for responsive adjustments */
+@media (max-width: 600px) {
+    .crop-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #84D3DC;
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            background-color: #fff; /* Or any color you want */
+        }
+        .navbar .navbar-nav .nav-link {
+            color: #333; /* Or any color you want */
+        }
+        .navbar .navbar-nav .nav-link:hover {
+            color: #000;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            padding: 50px;
+        }
+        .contact-info {
+            color: #fff;
+            background-color: #7a7a7a; /* Or any color you want */
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .form-control {
+            border-radius: 20px;
+        }
+        .submit-btn {
+            background-color: #6c5ce7; /* Or any color you want */
+            border: none;
+            border-radius: 20px;
+        }
+        /* Additional styles can be added as needed */
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Brand Logo</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#">About</a>
+                <button class="btn btn-primary ml-md-3">Sign Up</button>
+                </div>
+                </div>
+                </div>
+                
+                </nav>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-6 contact-form">
+                            <h2>Contact Us</h2>
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" placeholder="Message" rows="4"></textarea>
+                                </div>
+                                <button type="submit" class="btn submit-btn">Submit</button>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-info">
+                                <p>Contact us for questions, technical assistance, or collaboration opportunities via the contact information provided.</p>
+                                <p><strong>Phone:</strong> +977 094000000</p>
+                                <p><strong>Email:</strong> info@knowverticalfarming.com</p>
+                                <p><strong>Address:</strong> Putalisadak, Kathmandu, Nepal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                <script>
+                    // Placeholder function for handling form submission
+                    document.getElementById('contactForm').addEventListener('submit', function(event){
+                        event.preventDefault();
+                
+                        var userCredentials = {
+                            name: document.getElementById('name').value,
+                            email: document.getElementById('email').value,
+                            phone: document.getElementById('phone').value,
+                            message: document.getElementById('message').value
+                        };
+                
+                        console.log(userCredentials);
+                        // Here you would handle the authentication
+                        // For now, just log to the console
+                    });
+                </script>
+                </body>
+                </html>

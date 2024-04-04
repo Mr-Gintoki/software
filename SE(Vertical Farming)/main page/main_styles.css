@@ -1,0 +1,139 @@
+/* Resets and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #C8E6FA; /* Light blue background */
+    display: flex;
+    align-items: center; /* Center children vertically */
+    justify-content: center; /* Center children horizontally */
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #2C4F2C; /* Dark green background */
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 0 20px;
+}
+
+header nav ul li a, #user-name {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+main {
+    flex-grow: 1;
+    padding: 100px 20px 50px; /* Padding top, horizontal, bottom */
+}
+
+/* Main content area */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Individual card styles */
+.card {
+    background-color: #7bd6f7; /* Default color for side cards */
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px; /* Fixed width for all cards */
+    margin: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Needed for z-index to work */
+    z-index: 1; /* Ensures side cards are under the middle card */
+}
+
+.card.middle {
+    background-color: #2B5F95; /* Navy blue background for the middle card */
+    transform: scale(1.1); /* Make the card slightly larger */
+    z-index: 2; /* Ensures the middle card is above the side cards */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: white;
+    font-size: 14px;
+}
+
+/* Navigation buttons */
+.navigation {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.nav-button {
+    background-color: #2C4F2C; /* Dark green background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #3e633e; /* Lighten the color on hover */
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .card.middle {
+        transform: none; /* No scale for middle card on smaller screens */
+    }
+}
